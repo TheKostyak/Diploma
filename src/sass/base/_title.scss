@@ -1,0 +1,21 @@
+.title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $bright-color;
+        margin-right: 20px;
+    }
+    &::after {
+        margin: 0;
+        margin-left: 20px;
+    }
+}

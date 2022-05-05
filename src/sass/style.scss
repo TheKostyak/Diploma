@@ -1,0 +1,39 @@
+@import 'base/variables';
+@import 'base/title';
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&display=swap');
+* {
+    font-family: 'Noto Sans', sans-serif;
+    img {
+        height: 100%;
+        object-fit: fill;
+    }
+}
+
+body {
+    // background-color: #24292f;
+    background-color: #35221f;
+}
+
+.btn {
+    width: 150px;
+    height: 50%;
+    border: none;
+    color: $bright-color;
+    background-color: #BF0404;
+    border-radius: 10px;
+    transition: transform 1s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/contacts';
+@import 'blocks/trend';

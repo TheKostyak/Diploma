@@ -1,0 +1,37 @@
+.trend {
+    position: relative;
+    min-height: 800px;
+    color: #fff;
+    margin: 0 40px;
+    .swiper {
+        width: auto;
+        height: 450px;
+        margin: 150px 20px;
+        &-wrapper {
+            display: flex;
+            align-self: start;
+        }
+        &-slide {
+            // padding: 40px 45px 70px; // uncomment if we need square cars
+            // height: 276px;   
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        &-button-next,
+        &-button-prev {
+            position: absolute;
+            color: $bright-color;
+        }
+        &-pagination {
+            &-bullet {
+                width: 20px;
+                background: $bright-color;
+                opacity: 0.4;
+                border-radius: 3px;
+                &-active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

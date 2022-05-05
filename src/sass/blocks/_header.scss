@@ -1,0 +1,60 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #1B3059;
+    display: flex;
+    color: #fff;
+    border: 1px solid $bright-color;
+    border-radius: 0 0 30px 30px;
+    z-index: 10;
+    .nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+        }
+        &__links {
+            width: 40%;
+            .ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                display: flex;
+                width: 1fr;
+                justify-content: space-between;
+                align-items: center;
+            }
+            a {
+                position: relative;
+                color: $bright-color;
+                text-decoration: none;
+            }
+            li {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 3px;
+                    bottom: -10px;
+                    left: 0;
+                    background-color: $bright-color;
+                    transition: width .5s;
+                }
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
