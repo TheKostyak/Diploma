@@ -14,6 +14,9 @@
         justify-content: center;
         flex-wrap: wrap;
         z-index: 2;
+        .descr {
+            text-align: center;
+        }
     }
     &__image {
         width: 60%;
