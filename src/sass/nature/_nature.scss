@@ -1,0 +1,16 @@
+.nature {
+    min-height: 800px;
+    background-color: rgb(211, 189, 189);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        margin-top: 60px;
+        width: 306px;
+        height: 390px;
+        background: url("../../icons/item_bg.png") no-repeat;
+        cursor: pointer;
+    }
+}

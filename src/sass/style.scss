@@ -12,7 +12,8 @@
 
 body {
     // background-color: #24292f;
-    background-color: #35221f;
+    // background-color: #35221f;
+    background-color: $bg-color;
 }
 
 .btn {
@@ -33,8 +34,13 @@ body {
     margin: 0 auto;
 }
 
+// for the first page
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/trend';
+@import 'blocks/cards';
 @import 'blocks/contacts';
 @import 'blocks/footer';
+// for second page
+@import 'nature/welcome';
+@import 'nature/nature';
