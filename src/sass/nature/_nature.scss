@@ -1,16 +1,56 @@
 .nature {
     min-height: 800px;
     background-color: rgb(211, 189, 189);
+    padding: 50px 0;
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__item {
+        position: relative;
         margin-top: 60px;
+        padding: 10px 20px;
         width: 306px;
         height: 390px;
         background: url("../../icons/item_bg.png") no-repeat;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: transform .5s;
+        &_price {
+            color: #000;
+            text-decoration: none;
+            .old-price {
+                text-decoration: line-through;
+            }
+            .new-price {
+                margin: 5px 0;
+                font-size: 20px;
+            }
+        }
+        .btn {
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:hover {
+            transform: scale(1.01);
+        }
+        img {
+            position: absolute;
+            width: 269px;
+            height: 269px;
+            left: 18px;
+            top: 10px
+        }
+    }
+    a {
+        text-decoration: none;
     }
 }

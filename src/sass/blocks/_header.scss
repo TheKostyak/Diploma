@@ -77,34 +77,41 @@ p {
 }
 
 .nav__dropdown {
-    position: relative;
+    cursor: pointer;
     &::after {
         display: none;
     }
-}
-
-#dropDown {
-    // display: none;
-    position: absolute;
-    list-style-type: none;
-    width: 100px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: $bg-color;
-    border: 1px solid $bright-color;
-    border-radius: 10px;
-    margin-top: 5px;
-    li {
-        padding: 5px;
-        &:hover {
-            transform: scale(1.1);
-            &::after {
-                display: none;
+    ul {
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        width: 100px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: $bg-color;
+        border: 1px solid $bright-color;
+        border-radius: 10px;
+        margin-top: 5px;
+        transition: all .5s;
+        li {
+            padding: 5px;
+            &:hover {
+                transform: scale(1.1);
+                &::after {
+                    display: none;
+                }
             }
         }
     }
-    &__active {
-        display: flex;
+    img {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+    &_active {
+        ul {
+            display: block;
+        }
     }
 }
