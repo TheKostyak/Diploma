@@ -9,6 +9,15 @@
         height: 100%;
         object-fit: fill;
     }
+    a {
+        color: $bright-color;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: $bright-color;
+            text-decoration: none;
+        }
+    }
 }
 
 body {
@@ -43,5 +52,4 @@ body {
 @import 'blocks/contacts';
 @import 'blocks/footer';
 // for second page
-@import 'nature/welcome';
 @import 'nature/nature';

@@ -1,13 +1,21 @@
 .nature {
     min-height: 800px;
-    background-color: rgb(211, 189, 189);
+    background-color: $beige-bg;
     padding: 50px 0;
-    &__wrapper {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+    &__title {
+        &::after,
+        &::before {
+            background-color: #000;
+            border: 2px solid $bright-color;
+        }
     }
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     &__item {
         position: relative;
         margin-top: 60px;
@@ -50,7 +58,8 @@
             top: 10px
         }
     }
-    a {
-        text-decoration: none;
-    }
+}
+
+a {
+    text-decoration: none;
 }

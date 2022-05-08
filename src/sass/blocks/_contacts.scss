@@ -27,4 +27,27 @@
             right: 0;
         }
     }
+    &__links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &_item {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $bright-color;
+            border-radius: 50%;
+            transition: margin-top .5s;
+            &:hover {
+                margin-top: -20px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }

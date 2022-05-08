@@ -31,3 +31,17 @@
         font-size: 36px;
     }
 }
+
+.welcome {
+    background: url("../../img/pages/nature_promo.jpg") center center/cover no-repeat;
+    &__welcome {
+        height: 300px;
+        &_btn {
+            width: 300px;
+            height: 50px;
+        }
+    }
+    &__text {
+        margin: 0 0 25px 0;
+    }
+}
