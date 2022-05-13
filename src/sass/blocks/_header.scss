@@ -91,7 +91,6 @@ p {
         border: 1px solid $bright-color;
         border-radius: 10px;
         margin-top: 5px;
-        transition: all .5s;
         li {
             padding: 5px;
             &:hover {
@@ -106,10 +105,14 @@ p {
         width: 15px;
         height: 15px;
         margin-left: 5px;
+        transition: transform .5s;
     }
     &_active {
         ul {
             display: block;
+        }
+        img {
+            transform: rotate(180deg);
         }
     }
 }
