@@ -1,4 +1,4 @@
-mediumZoom(".nature__item_image", {
+mediumZoom(".catalog__item_image", {
     margin: 100,
 });
 

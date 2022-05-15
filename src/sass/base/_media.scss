@@ -1,0 +1,160 @@
+@media(max-width: 1200px) {
+    .btn {
+        background-color: cornflowerblue;
+    }
+    .cards {
+        min-height: 700px;
+        flex-direction: column;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(auto, 300px));
+            grid-template-rows: 300px;
+            grid-auto-rows: 300px;
+            justify-content: center;
+            grid-gap: 30px;
+        }
+        &__item {
+            margin: 0;
+        }
+        &__text {
+            position: static;
+            transform: none;
+        }
+        a {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .contacts {
+        &__text {
+            margin-top: 80px;
+            padding: 20px 30px;
+            .descr {
+                max-height: 400px;
+                overflow: scroll;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .contacts {
+        min-height: 700px;
+        &__image {
+            width: 70%;
+        }
+        &__text {
+            margin-top: 40px;
+            padding: 20px 10px;
+            .title {
+                margin: 30px 20px;
+                font-size: 28px;
+            }
+            .descr {
+                padding: 0 10px;
+            }
+        }
+    }
+    .btn {
+        background-color: chocolate;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        .nav__links {
+            display: none;
+        }
+        .btn {
+            // display: none;
+        }
+    }
+    .burger {
+        display: block;
+    }
+    .trend {
+        min-height: 650px;
+        margin: 0 20px;
+        .swiper {
+            height: 300px;
+            margin: 100px 0;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .cards {
+        min-height: 700px;
+        flex-direction: column;
+        &__wrapper {
+            margin-top: 100px;
+            grid-template-columns: repeat(2, minmax(auto, 250px));
+            grid-template-rows: 250px;
+            grid-auto-rows: 250px;
+            justify-content: center;
+            grid-gap: 30px;
+        }
+        &__text {
+            position: static;
+            transform: none;
+        }
+    }
+    .contacts {
+        padding: 20px 10px;
+        flex-direction: column;
+        &__image {
+            width: 100%;
+            order: -1;
+        }
+        &__text {
+            margin: 0;
+            width: 100%;
+            .title {
+                margin: 30px 0;
+            }
+        }
+    }
+    .btn {
+        background-color: darkmagenta;
+    }
+}
+
+@media(max-width: 576px) {
+    .title {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    .promo {
+        &__welcome {
+            width: 20rem;
+            margin: 0 20px;
+            &_btn {
+                width: 250px;
+            }
+        }
+        .h1 {
+            font-size: 56px;
+        }
+    }
+    .trend {
+        min-height: 300px;
+        .swiper {
+            height: 350px;
+            margin: 50px 0;
+        }
+    }
+    .cards {
+        flex-direction: column;
+        &__wrapper {
+            margin-top: 50px;
+            justify-content: center;
+            grid-template-rows: 250px;
+            grid-template-columns: 250px;
+            grid-auto-rows: 250px;
+            grid-gap: 20px;
+        }
+    }
+    .btn {
+        background-color: darkblue;
+    }
+}

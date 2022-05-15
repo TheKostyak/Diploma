@@ -42,6 +42,7 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 // for the first page
@@ -53,3 +54,5 @@ body {
 @import 'blocks/footer';
 // for second page
 @import 'nature/nature';
+// media
+@import 'base/media';
