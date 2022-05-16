@@ -6,16 +6,16 @@
         &::after,
         &::before {
             background-color: #000;
-            border: 2px solid $bright-color;
         }
     }
 }
 
 .catalog {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 306px);
+    grid-template-rows: repeat(auto-fill, 390px);
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     &__item {
         position: relative;
         margin-top: 60px;

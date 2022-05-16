@@ -6,6 +6,7 @@
         min-height: 700px;
         flex-direction: column;
         &__wrapper {
+            margin-top: 100px;
             display: grid;
             grid-template-columns: repeat(2, minmax(auto, 300px));
             grid-template-rows: 300px;
@@ -33,6 +34,17 @@
                 max-height: 400px;
                 overflow: scroll;
             }
+        }
+    }
+    //for second page
+    .nature {
+        .container {
+            width: auto;
+            padding: 0 40px;
+        }
+        .catalog {
+            justify-content: space-evenly;
+            grid-gap: 20px;
         }
     }
 }
@@ -64,13 +76,36 @@
     .header {
         .nav__links {
             display: none;
+            .ul {
+                flex-direction: column;
+                li {
+                    margin-top: 15px;
+                }
+            }
+            &_active {
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                width: 30%;
+                height: 100vh;
+                background-color: rgba($color: #000000, $alpha: .8);
+            }
+        }
+        .nav__dropdown {
+            ul {
+                background-color: rgba($color: #000000, $alpha: .8);
+            }
         }
         .btn {
-            // display: none;
+            display: none;
         }
-    }
-    .burger {
-        display: block;
+        .burger {
+            display: flex;
+        }
     }
     .trend {
         min-height: 650px;
@@ -117,6 +152,22 @@
     .btn {
         background-color: darkmagenta;
     }
+    //for second page
+    .welcome {
+        &__welcome {
+            &_btn {
+                width: 250px;
+            }
+        }
+    }
+    .nature {
+        .container {
+            padding: 0
+        }
+        .catalog {
+            grid-gap: 10px;
+        }
+    }
 }
 
 @media(max-width: 576px) {
@@ -141,6 +192,12 @@
         .swiper {
             height: 350px;
             margin: 50px 0;
+            &-button-next {
+                display: none;
+            }
+            &-button-prev {
+                display: none;
+            }
         }
     }
     .cards {
