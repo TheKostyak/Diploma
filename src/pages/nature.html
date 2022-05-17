@@ -31,7 +31,10 @@
                         </li>
                     </ul>
                 </div>
-                <button class="btn">Help Me!</button>
+                <button class="btn" data-modal="consultation">Help Me!</button>
+                <div class="burger" id="burger">
+                    <span></span><span></span><span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -53,7 +56,8 @@
                         <div class="old-price">300$</div>
                         <div class="new-price">fisting</div>
                     </div>
-                    <div class="btn">Buy</div>
+                    <div class="catalog__item_title">ASS</div>
+                    <div class="btn btn__buy">Buy</div>
                 </a>
                 <a class="catalog__item">
                     <img src="../img/main_bg.jpg" alt="shop item" class="catalog__item_image">
@@ -61,7 +65,8 @@
                         <div class="old-price">300$</div>
                         <div class="new-price">fisting</div>
                     </div>
-                    <div class="btn">Buy</div>
+                    <div class="catalog__item_title">dungeon</div>
+                    <div class="btn btn__buy">Buy</div>
                 </a>
                 <a class="catalog__item">
                     <img src="../img/main_bg.jpg" alt="shop item" class="catalog__item_image">
@@ -69,47 +74,8 @@
                         <div class="old-price">300$</div>
                         <div class="new-price">fisting</div>
                     </div>
-                    <div class="btn">Buy</div>
-                </a>
-                <a class="catalog__item">
-                    <img src="../img/main_bg.jpg" alt="shop item" class="catalog__item_image">
-                    <div class="catalog__item_price">
-                        <div class="old-price">300$</div>
-                        <div class="new-price">fisting</div>
-                    </div>
-                    <div class="btn">Buy</div>
-                </a>
-                <a class="catalog__item">
-                    <img src="../img/main_bg.jpg" alt="shop item" class="catalog__item_image">
-                    <div class="catalog__item_price">
-                        <div class="old-price">300$</div>
-                        <div class="new-price">fisting</div>
-                    </div>
-                    <div class="btn">Buy</div>
-                </a>
-                <a class="catalog__item">
-                    <img src="../img/main_bg.jpg" alt="shop item" class="catalog__item_image">
-                    <div class="catalog__item_price">
-                        <div class="old-price">300$</div>
-                        <div class="new-price">fisting</div>
-                    </div>
-                    <div class="btn">Buy</div>
-                </a>
-                <a class="catalog__item">
-                    <img src="../img/main_bg.jpg" alt="shop item" class="catalog__item_image">
-                    <div class="catalog__item_price">
-                        <div class="old-price">300$</div>
-                        <div class="new-price">fisting</div>
-                    </div>
-                    <div class="btn">Buy</div>
-                </a>
-                <a class="catalog__item">
-                    <img src="../img/main_bg.jpg" alt="shop item" class="catalog__item_image">
-                    <div class="catalog__item_price">
-                        <div class="old-price">300$</div>
-                        <div class="new-price">fisting</div>
-                    </div>
-                    <div class="btn">Buy</div>
+                    <div class="catalog__item_title">cum</div>
+                    <div class="btn btn__buy">Buy</div>
                 </a>
 
 
@@ -162,7 +128,38 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close" id="close">&times;</div>
+            <div class="modal__title">Leave your contacts <br> and we will phone you</div>
+            <form action="#" class="feed-form">
+                <input type="text" required placeholder="Your name" name="name">
+                <input type="number" required placeholder="Phone number" name="phone">
+                <input type="email" required placeholder="E-mail" name="email">
+                <button class="btn btn_submit">Help me!</button>
+            </form>
+        </div>
 
+        <div class="modal" id="order">
+            <div class="modal__close" id="close">&times;</div>
+            <div class="modal__title">Your order:</div>
+            <div class="modal__subtitle">Photo</div>
+            <form action="#" class="feed-form">
+                <input type="text" required placeholder="Your name" name="name">
+                <input type="number" required placeholder="Phone number" name="phone">
+                <input type="email" required placeholder="E-mail" name="email">
+                <button class="btn btn_submit">Help me!</button>
+            </form>
+        </div>
+        <div class="modal" id="thanks">
+            <div class="modal__close" id="close">&times;</div>
+            <div class="modal__title">Thanks for your appeal</div>
+            <div class="modal__descr">We will get you soon</div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script src="../js/medium.js"></script>
     <script src="../js/app.js"></script>
 </body>

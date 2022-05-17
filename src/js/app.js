@@ -17,3 +17,19 @@ burger.addEventListener("click", () => {
     navLinks[0].classList.toggle("nav__links_active");
 
 });
+
+
+$('[data-modal=consultation]').on("click", function() {
+    $(".overlay, #consultation").fadeIn();
+});
+$(".modal__close").on("click", function() {
+    $(".overlay, #consultation, #thanks, #order").fadeOut();
+});
+$(".btn__buy").on("click", function() {
+    $(".overlay, #order").fadeIn();
+});
+$(".btn__buy").each(function(i) {
+    $(this).on("click", function() {
+        $("#order .modal__subtitle").text($(".catalog__item_title").eq(i).text());
+    });
+});
