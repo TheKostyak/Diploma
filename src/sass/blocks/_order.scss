@@ -1,1 +1,24 @@
-.order {}
+.order {
+    min-height: 800px;
+    width: 100%;
+    background-color: #72BDA3;
+    margin: 0 auto;
+    &__title {
+        text-align: center;
+        padding-top: 90px;
+        font-weight: 500;
+        font-size: 32px;
+    }
+    &__ship {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 90px;
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+        &_descr {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}

@@ -28,7 +28,6 @@ const swiper = new Swiper('.swiper', {
         },
     },
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         type: "bullets",
@@ -39,27 +38,4 @@ const swiper = new Swiper('.swiper', {
         prevEl: ".swiper-button-prev",
     },
 
-
-
-
-
-    // Default parameters
-    // slidesPerView: 1,
-    // spaceBetween: 10,
-    // // Responsive breakpoints
-    // breakpoints: {
-    //     // when window width is >= 320px
-    //     320: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 20
-    //     },
-    //     // when window width is >= 480px
-    //     480: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 30
-    //     },
-    //     768: {
-    //         slidesPerView: 3,
-    //     },
-    // }
 });
