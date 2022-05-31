@@ -28,18 +28,34 @@
         flex-direction: column;
         justify-content: flex-end;
         transition: transform .5s;
-        &_price {
+        &_category {
+            position: absolute;
+            width: 74px;
+            height: 35px;
+            background-color: $bright-color;
+            top: 55%;
+            left: 10%;
+            border-radius: 8px 8px 8px 0px;
+        }
+        &_text {
             color: #000;
-            text-decoration: none;
-            .old-price {
-                text-decoration: line-through;
-            }
-            .new-price {
-                margin: 5px 0;
-                font-size: 20px;
-            }
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+        }
+        &_descr {
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_price {
+            font-size: 20px;
         }
         .btn {
+            margin-top: 20px;
             width: 100px;
             height: 30px;
             border-radius: 8px;

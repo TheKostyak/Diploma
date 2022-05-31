@@ -209,7 +209,7 @@
         .nav {
             &__links {
                 &_active {
-                    width: 40%;
+                    width: 50%;
                 }
             }
         }
@@ -253,6 +253,15 @@
     .order {
         &__title {
             font-size: 24px;
+        }
+    }
+    .modal {
+        width: 80%;
+        .feed-form {
+            width: 100%;
+        }
+        &__close {
+            right: -25px;
         }
     }
     .btn {
