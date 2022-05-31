@@ -34,4 +34,5 @@ $(document).ready(function() {
             $("#order .modal__subtitle").text($(".catalog__item_title").eq(i).text());
         });
     });
+
 });
