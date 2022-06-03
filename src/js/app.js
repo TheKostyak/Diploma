@@ -32,6 +32,7 @@ $(document).ready(function() {
     $(".btn__buy").each(function(i) {
         $(this).on("click", function() {
             $("#order .modal__subtitle").text($(".catalog__item_title").eq(i).text());
+            $("#order .input__subtitle").text($(".catalog__item_title").eq(i).text());
         });
     });
 

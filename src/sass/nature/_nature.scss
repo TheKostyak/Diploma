@@ -76,6 +76,16 @@
     }
 }
 
+#order {
+    .input__subtitle {
+        position: absolute;
+        width: 0;
+        border: none;
+        height: 0;
+        background: transparent;
+    }
+}
+
 a {
     text-decoration: none;
 }
