@@ -71,7 +71,7 @@
             width: 269px;
             height: 269px;
             left: 18px;
-            top: 10px
+            top: 10px;
         }
     }
 }
@@ -88,4 +88,8 @@
 
 a {
     text-decoration: none;
+}
+
+.medium-zoom-image--opened {
+    z-index: 2;
 }
