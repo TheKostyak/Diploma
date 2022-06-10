@@ -33,7 +33,7 @@ $(document).ready(function() {
             data: $(this).serialize() // data which we will send to the server | $(this) means data we are working with | .serialize prepares data for the server
         }).done(function() { //when we end the operation we execute next function
             $(this).find("input").val(""); // .find() searching for whatever we write in the brackets (class or block, etc) | .val - value of our inputs after we send the form  
-            $('#consultation, #order').fadeOut(); //hide consultation or order overlay
+            $('#consultation').fadeOut(); //hide consultation or order overlay
             $('.overlay, #thanks').fadeIn(); //show thanks window
             $('form').trigger('reset'); // reset all forms 
         });
